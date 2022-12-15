@@ -1,6 +1,67 @@
---bs-volcha-rgb: 128, 0, 0;
+@charset "UTF-8";
+
+:root{
+--bs-volcha-rgb: 213, 43, 30;
+--bs-wolf-rgb: 0, 57, 166;
+--bs-wolf-rgb-z: 250, 251, 252;
+--bs-bg-opacity:1;
+--bs-darkwolf: #fff;
+--bs-lightwolf: #000;
+--bs-vbody-rgb: 240, 248, 255;
+}
+
+body {
+background-color: rgba( var(--bs-vbody-rgb), var(--bs-bg-opacity) ) !important; 
+}
+
+.bottom-line {
+	border-bottom: solid #999 1px;
+	margin: 5px;
+}
+
+.mb-card {
+	margin: 10px;
+}
 
 .bg-volcha {
- --bs-bg-opacity:1;
- background-color:rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important
+ background-color:rgba( var(--bs-volcha-rgb), var(--bs-bg-opacity) )!important
+}
+
+.text-bg-wolf {
+  color: var(--bs-darkwolf) !important;
+  background-color: rgba( var(--bs-wolf-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+.text-bg-wolf-z {
+  color: var(--bs-lightwolf) !important;
+  background-color: rgba( var(--bs-wolf-rgb-z), var(--bs-bg-opacity, 1)) !important;
+}
+
+#wolf {
+  min-height: 100%;
+  margin: 15px auto 0;
+}
+
+.card-img-z {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+#wolf > .z-content {
+	width: 90%;
+	min-width: 940px;
+}
+
+#wolfback {
+	width: 25%;
+	min-height:30px;
+	display:block;
+	float:left;
+}
+
+#wolfback-z {
+	width: 10%;
+	min-height:30px;
+	display:block;
+	float:left;
 }
