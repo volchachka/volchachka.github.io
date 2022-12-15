@@ -1,0 +1,6 @@
+----bs-volcha-rgb: 128, 0, 0;
+
+.bg-volcha {
+ --bs-bg-opacity:1;
+ background-color:rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important
+}
